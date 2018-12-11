@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="/css/index.css" th:href="@{/css/index.css}" rel="stylesheet"></link>
+</head>
+<body>
+<script type="text/javascript" src="/js/index.js"></script>
+	<table class="list">
+	  <tr>
+	    <th>ID</th>
+	    <th>名前</th>
+	    <th>住所</th>
+	    <th>TEL</th>
+	    <th>誕生日</th>
+	  </tr>
+	  <tr th:each="list:${list}">
+	    <td ><a href="/member" th:href="@{/member}" th:text="${list.id}" ></a></td>
+	    <td th:text="${list.name}"></td>
+	    <td th:text="${list.nm_add}"></td>
+	    <td th:text="${list.nk_tel}"></td>
+	    <td th:text="${list.birthday}"></td>
+	  </tr>
+	</table>
+	<button type="submit" value="追加" >追加</button>
+	<input type="button" value="追加+" onclick="addUser()" >
+	
+	<script>
+	<!--
+		function addUser() {
+			addUserMain();
+			return true;
+		}
+	
+	-->
+	</script>
+</body>
+</html>

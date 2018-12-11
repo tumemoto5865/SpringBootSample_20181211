@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<link href="/css/member.css" th:href="@{/css/member.css}" rel="stylesheet"></link>
+	<link rel="stylesheet" media="all" th:href="@{/css/style.css}"/>
+	<script type="text/javascript" src="/js/jquery-3.3.1.min.js" ></script>
+	<script type="text/javascript" src="/js/member.js" ></script>
+</head>
+<body>
+
+	<form action="/member" method="post" name="memberReg">
+		<div class="container">
+			<div class="row">
+				<div class="gray">
+					<span style="color:Red;">（※）</span>は必須
+				</div>
+			</div>
+			<div class="UserInfoTitle">1</div>
+			<div class="row">
+				<div class="UserInfo1_1 head2">お名前</div>
+				<div class="row">
+					<div class="UserDtl_1"><span style="color:Red;">（※）</span>ご購入者様のお名前</div>
+					<input type="text" id="name" name="name" size="20" maxlength="20" class="kana" style="ime-active;" />
+				</div>
+				<div class="row">
+					<div class="UserDtl_1"><span style="color:Red;">（※）</span>フリガナ</div>
+					<input type="text" id="name" name="kana" size="20" maxlength="20" class="kana" style="ime-active;" />
+				</div>
+				<div class="UserInfo1_1 head">ご住所</div>
+				<div class="row">
+					<div class="UserDtl_1"><span style="color:Red;">（※）</span>住所</div>
+					<input type="text" name="nm_add" size="50" maxlength="50" class="kana" style="ime-active;" />
+				</div>
+				<div class="UserInfo1_1 head">ご連絡先</div>
+				<div class="row">
+					<div class="UserDtl_1"><span style="color:Red;">（※）</span>電場番号</div>
+					<input type="text" id="num-input" name="nk_tel" size="15" maxlength="15" class="num" style="ime-active;" />
+				</div>
+				<div class="UserInfo1_1 head">生年月日</div>
+				<div class="row">
+					<div class="UserDtl_1"><span style="color:Red;"></span>　　　生年月日</div>
+					<input type="text" name="birthday" size="20" maxlength="20" class="kana" style="ime-active;" />
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="UserInfoTitle2">2</div>
+			<div class="row">
+				<div class="UserInfo1_1 head">メールアドレス</div>
+				<div class="row">
+					<div class="UserDtl_1"><span style="color:Red;">（※）</span>アドレス</div>
+					<input type="text" id="name" name="mail" size="20" maxlength="20" class="kana" style="ime-active;" />
+				</div>
+				<div class="UserInfo1_1 head2">パスワード</div>
+				<div class="row">
+					<div class="UserDtl_1"><span style="color:Red;">（※）</span>パスワード</div>
+					<input type="text" name="pass" size="50" maxlength="50" class="kana" style="ime-active;" />
+				</div>
+				<div class="row">
+					<div class="UserDtl_1"><span style="color:Red;">（※）</span>パスワード再入力</div>
+					<input type="text" id="name" name="pass2" size="20" maxlength="20" class="kana" style="ime-active;" />
+				</div>
+			</div>
+			<button type="button" name="action" value="doCommit" id="doCommit" onclick="executeSubmit()" >登録</button>
+		</div>
+	</form>
+	
+	
+</body>
+</html>

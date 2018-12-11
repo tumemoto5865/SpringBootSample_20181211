@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+.kana {
+	ime-mode: active;
+}
+
+button._hidden {
+	display: none;
+}
+
+
+
+.container {
+	margin-left: 200px;
+}
+.box {
+    display: table-cell;
+}
+.row {
+    display: table-row;
+}
+.gray {
+    background: gray;
+	width: 1000px
+}
+
+.silver {
+    background: silver;
+}
+
+.orange {
+    background: orange;
+}
+
+.row2 {
+	height: 100px;
+}
+.UserInfo1_1 {
+    width: 220px;
+    background: #e7f3f0;
+	float:left;
+}
+.UserDtl_1 {
+	font-size: 1.3em;
+	float:left;
+	width: 280px;
+}
+
+.UserInfoTitle {
+    width: 30px;
+	height: 150px;
+    font-size: 2.5em;
+    color: #FFFFFF;
+    background: #1e9484;
+	float:left;
+	border: 1px solid gray;
+}
+.UserInfoTitle2 {
+    width: 30px;
+	height: 90px;
+    font-size: 2.5em;
+    color: #FFFFFF;
+    background: #1e9484;
+	float:left;
+	border: 1px solid gray;
+}
+.head {
+
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 0 1px 0 2px;
+	height: 30px;
+}
+.head2 {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 0 1px 0 2px;
+	height: 60px;
+}
